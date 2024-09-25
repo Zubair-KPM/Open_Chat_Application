@@ -1,0 +1,33 @@
+/* style.css */
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; /* Light background for better visibility */
+}
+
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 60%;
+    clear: both;
+    word-wrap: break-word; /* Handle long words */
+    color: #fff; /* Text color */
+}
+
+.message.right {
+    background-color: skyblue; /* Color for user1 */
+    align-self: flex-end;
+    text-align: right;
+}
+
+.message.left {
+    background-color: lightgreen; /* Color for user2 */
+    align-self: flex-start;
+    text-align: left;
+}
